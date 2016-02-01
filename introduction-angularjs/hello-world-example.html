@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Wolrd AngularJS</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+
+ <!--It is the owner of angular js application-->
+ <di ng-app="">
+
+      <!--ng-model directives bind the value of the input field-->
+      <!--to the application variable   name-->
+     <p> Name : <input type="text" ng-model="name"> </p>
+     <h1>Hello {{name}}</h1>
+     <!--ng-bind directive binds the innerHTML of  to name variable-->
+     <!--directives mean html attributes-->
+     <p ng-bind="name"></p>
+ </di>
+
+</body>
+</html>

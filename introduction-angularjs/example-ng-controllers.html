@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Ng-Controllers</title>
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+</head>
+<body>
+
+<!--
+-AngularJS Modules define AngularJS Applciation
+-AngularJS controllers control AngularJS Application
+-The ng-app directive defines the application ,
+-ng-controller directive defines the controller
+
+-->
+
+<div ng-app="myApp" ng-controller="persons" style="color:burlywood">
+
+   <p>First Name :<input type="text" ng-model="firstName"></p>
+    <p>Last Name:<input type="text" ng-model="lastName"></p>
+    <p>City :<input  type="text" ng-model="city"></p>
+    <p>Address<input type="text" ng-model="address"> </p>
+    <p> Credit <input type="text" ng-model="credit"> </p>
+    <br>
+    Full Name: {{firstName + " "+lastName + " "+city + " " +address+ " "+credit}}
+</div>
+
+<script>
+    //defines an application
+    var app = angular.module('myApp', []);
+    //controller control the APplication
+    app.controller('persons', function ($scope) {
+        $scope.firstName = 'Haider';
+        $scope.lastName = 'Malik';
+        $scope.city='FSD';
+    });
+</script>
+
+</body>
+</html>

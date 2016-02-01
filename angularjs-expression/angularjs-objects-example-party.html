@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Party</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+</head>
+<body>
+
+<div ng-init="party={
+id:1,
+name:'Haider Malik',
+city:FSD,
+credit:1000.0,
+debit:1000.0,
+balance:1000.0
+
+}">
+
+ <p>Party Id : <span ng-bind="party.id"></span> </p>
+    <p>Party Name : <span ng-bind="party.name"></span> </p>
+    <p>Party City : <span ng-bind="party.city"></span> </p>
+    <p>Party Credit : <span ng-bind="party.credit"></span> </p>
+    <p>Party Debit : <span ng-bind="party.debit"></span> </p>
+    <p>Party Balance : <span ng-bind="party.balance"></span> </p>
+</div>
+
+</body>
+</html>
