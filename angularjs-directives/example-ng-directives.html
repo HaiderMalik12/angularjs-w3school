@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example ng-Directives</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+</head>
+<!--
+
+-ng-dreictive html attributes ko he extend kia va ha
+-ng-app initilize an angular js application
+-ng-init directives initilize application data
+-ng-model directives binds the value of HTML control to applicaiton data
+-
+-->
+<body>
+
+<div ng-app="" ng-init="firstName='John' ; lastName='malik'">
+
+    <p>Name: <input type="text" ng-model="firstName"></p>
+    <p>LastName <input type="text" ng-model="lastName"></p>
+
+    <!--This is data bindding expression-->
+    <!--Two Text FIleds are bound with to ng-model directvies-->
+    <p>You wrote: {{ firstName }}</p>
+    <p> You wrote {{lastName}}</p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Create your own Directive</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+</head>
+<body>
+
+
+  <my-directive></my-directive>
+
+  <div my-directive></div>
+
+
+
+ <script>
+     var app=angular.module('myApp',[]);
+     app.directive('myDirective',function(){
+
+         return{
+             restrict:"EA",
+             template:'<h1> This is My Directive you can call it in hTMl</h1>'
+
+         }
+     });
+ </script>
+</body>
+</html>
