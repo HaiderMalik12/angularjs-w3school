@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Controller Method</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+    <script src="personController.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="personCtrl">
+
+    First Name: <input type="text" ng-model="firstName" required><br>
+    Last Name: <input type="text" ng-model="lastName" required><br>
+    <br>
+    City Name:<input type="text" ng-model="city" required><br>
+    Credit :<input type="text" ng-model="credit" required><br>
+    Debit :<input type="text" ng-model="debit" required><br>
+    Balance:<input type="text" ng-model="balance" required><br>
+    Full Name: {{fullName()}}
+    Prty Description : {{partyDescription()}}
+
+</div>
+</body>
+</html>

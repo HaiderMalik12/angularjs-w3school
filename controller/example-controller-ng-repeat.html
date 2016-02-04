@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Controller with ng-reapet</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+    <script src="partyController.js"></script>
+    <style>
+        h2{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div  ng-controller="partyCtrl" ng-init="parties=['burjBank','HaiderMalik']; items=[{id:1,name:'haider'},{id:2,name:'Malik'},{id:3,name:'Burj Bank'}]">
+
+    <ul>
+        <li ng-repeat="party in parties">
+          {{party}}
+        </li>
+
+    </ul>
+
+    {{showParties()}}
+
+    <h2>Welcome wth Objects</h2>
+
+    <ul>
+        <li ng-repeat="item in items">
+            {{item.id + " "+item.name }}
+        </li>
+
+    </ul>
+
+
+</div>
+
+</body>
+</html>

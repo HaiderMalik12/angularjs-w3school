@@ -7,22 +7,24 @@
     </script>
 </head>
 <body>
-
-
   <my-directive></my-directive>
 
   <div my-directive></div>
 
-
+  <div my-directive1></div>
 
  <script>
      var app=angular.module('myApp',[]);
      app.directive('myDirective',function(){
-
          return{
              restrict:"EA",
              template:'<h1> This is My Directive you can call it in hTMl</h1>'
-
+         }
+     });
+     app.directive('myDirective1',function(){
+        return{
+            restrict:"EA",
+            template:'<h1> This is my Directive1</h1>'
          }
      });
  </script>

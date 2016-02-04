@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Validate User Input</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+</head>
+<body>
+
+ <form name="myForm">
+
+ Email : <input type="email" name="myAddress" ng-model="text" required>
+
+     <!--ng-show bound with element who will display an error-->
+     <span ng-show="myForm.myAddress.$error.email">
+         Not a valid Email address
+     </span><br>
+
+     {{myForm.emailField.$valid}}
+     {{myForm.emailField.$dirty}}
+     {{myForm.emailField.$touched}}
+
+
+ </form>
+
+
+</body>
+</html>

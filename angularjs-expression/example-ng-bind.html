@@ -8,9 +8,14 @@
 </head>
 <body>
 
-<div ng-app="" ng-init="quantity= 1; cost=100;">
+<div ng-app="" ng-init="quantity= 1; cost=100; price=100.0;">
 
     <p> Total Dollars : <span ng-bind="quantity * cost"></span></p>
+
+   <p> <span ng-bind="quantity * cost"> </span></p>
+    <p> <span ng-bind="quantity * cost"></span></p>
+    <p><span ng-bind="quantity * cost + price"></span></p>
+    <p ng-bind="quantity * cost"></p>
 </div>
 
 </body>

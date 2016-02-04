@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Application Status</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+</head>
+<body>
+
+<form ng-app="myApp" name="myForm" ng-init="email='HaiderMalik@gmail.com'">
+    Email:
+    <input type="email" name="emailField" ng-model="email" required>
+
+    <p ng-show="myForm.emailField.$error.email">Not A Valid Email</p>
+
+
+
+
+
+</form>
+</body>
+</html>
